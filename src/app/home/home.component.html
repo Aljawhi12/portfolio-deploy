@@ -1,0 +1,324 @@
+<!-- Hero Section -->
+<section class="min-h-[50vh] lg:min-h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 relative overflow-hidden">
+  <app-navbar></app-navbar>
+  
+  <!-- Hero Image -->
+  <img 
+    class="absolute bottom-0 lg:left-0 mx-auto right-0 h-4/6 object-cover" 
+    [src]="'assets/images/man.png'" 
+    alt="Developer portrait"
+    loading="eager">
+    
+  <!-- Decorative Circle -->
+  <div class="hidden lg:block absolute -bottom-1/4 right-0 left-0 mx-auto w-96 h-96 bg-indigo-900 rounded-full -z-10"></div>
+  
+  <!-- Main Title -->
+  <div class="absolute top-1/3 left-5 text-lg sm:left-10 sm:text-4xl md:left-1/4 md:text-6xl lg:left-5 xl:left-28 xl:text-7xl font-bold">
+    <span class="text-gray-600 dark:text-gray-300">Freelance</span>
+    <p class="text-red-500 typewriter">Developer</p>
+  </div>
+  
+  <!-- Introduction Card -->
+  <div class="hidden lg:flex flex-col gap-5 rounded-md shadow-xl absolute top-0 bottom-0 m-auto right-10 bg-white dark:bg-slate-900 dark:shadow-slate-900 p-6 h-fit w-1/3">
+    <h1 class="text-4xl font-bold text-indigo-900 dark:text-indigo-400">Hi, I'm Ali</h1>
+    <p class="text-gray-400">
+      With over 2 years of experience in web design and development. I create responsive, 
+      user-friendly websites and applications that deliver exceptional user experiences.
+    </p>
+    <a class="bg-indigo-600 hover:bg-indigo-700 transition-colors text-white text-xl px-3 py-2 w-fit rounded-md font-semibold" href="#contact">Hire me</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="px-10 py-20 dark:bg-slate-900">
+  <div class="container mx-auto flex flex-col-reverse items-center lg:flex-row py-20 gap-20">
+    <!-- Profile Image -->
+    <div class="relative w-full lg:w-1/2">
+      <img class="h-1/4 absolute left-0 top-0 -z-10" [src]="'./assets/images/dots.png'" alt="Decorative dots">
+      <div class="h-full rounded-full overflow-hidden max-w-md mx-auto">
+        <img [src]="'assets/images/portrait.png'" alt="Profile portrait" loading="lazy">
+      </div>
+    </div>
+    
+    <!-- About Content -->
+    <div class="my-auto flex flex-col gap-3 w-full lg:w-1/2">
+      <h2 class="text-indigo-600 font-bold">ABOUT ME</h2>
+      <h3 class="text-3xl font-medium dark:text-white">Better Design</h3>
+      <h3 class="text-3xl font-medium dark:text-white">Better Experience</h3>
+      <p class="text-gray-400 mb-4">
+        I design and build digital products. I'm also a multi-disciplinary
+        maker with experience in a wide range of design disciplines.
+      </p>
+      
+      <!-- Skills -->
+      <div class="space-y-3">
+        <div>
+          <h4 class="text-gray-400 font-medium">HTML</h4>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-full bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-gray-400 font-medium">CSS</h4>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-gray-400 font-medium">Angular</h4>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-4/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+        
+        <div>
+          <h4 class="text-gray-400 font-medium">ASP.NET Core</h4>
+          <div class="w-full bg-gray-200 h-1.5 rounded-md">
+            <div class="w-5/6 bg-indigo-600 h-1.5 rounded-md"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Services Section -->
+<section class="py-20 dark:bg-slate-900" id="services">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="flex flex-col gap-3 items-center mb-16">
+      <h2 class="text-indigo-600 font-bold">SERVICES</h2>
+      <h3 class="text-3xl dark:text-white">What I Offer</h3>
+      <p class="w-full md:w-2/3 lg:w-1/2 text-center text-gray-400">
+        My approach to website design is to create a website that strengthens
+        your company's brand while ensuring ease of use and simplicity for
+        your audience.
+      </p>
+    </div>
+
+    <!-- Services Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Service Card 1 -->
+      <div class="shadow-xl rounded-lg p-6 flex flex-col gap-3 hover:shadow-2xl transition-shadow">
+        <img class="w-10" [src]="'assets/images/icon.png'" alt="Service icon" loading="lazy">
+        <h4 class="font-medium text-lg dark:text-white">UX/UI Design</h4>
+        <p class="text-gray-400">I specialize in creating interactive websites for individuals and small businesses.</p>
+        <a class="text-indigo-600 font-semibold text-sm mt-auto" href="#">Read More</a>
+      </div>
+      
+      <!-- Service Card 2 -->
+      <div class="shadow-xl rounded-lg p-6 flex flex-col gap-3 hover:shadow-2xl transition-shadow">
+        <img class="w-10" [src]="'assets/images/icon.png'" alt="Service icon" loading="lazy">
+        <h4 class="font-medium text-lg dark:text-white">Web Development</h4>
+        <p class="text-gray-400">I build modern, responsive websites using the latest technologies and best practices.</p>
+        <a class="text-indigo-600 font-semibold text-sm mt-auto" href="#">Read More</a>
+      </div>
+      
+      <!-- Service Card 3 -->
+      <div class="shadow-xl rounded-lg p-6 flex flex-col gap-3 hover:shadow-2xl transition-shadow">
+        <img class="w-10" [src]="'assets/images/icon.png'" alt="Service icon" loading="lazy">
+        <h4 class="font-medium text-lg dark:text-white">Mobile Development</h4>
+        <p class="text-gray-400">I create cross-platform mobile applications that work seamlessly on all devices.</p>
+        <a class="text-indigo-600 font-semibold text-sm mt-auto" href="#">Read More</a>
+      </div>
+      
+      <!-- Service Card 4 -->
+      <div class="shadow-xl rounded-lg p-6 flex flex-col gap-3 hover:shadow-2xl transition-shadow">
+        <img class="w-10" [src]="'assets/images/icon.png'" alt="Service icon" loading="lazy">
+        <h4 class="font-medium text-lg dark:text-white">API Development</h4>
+        <p class="text-gray-400">I design and implement robust APIs that connect your applications and services.</p>
+        <a class="text-indigo-600 font-semibold text-sm mt-auto" href="#">Read More</a>
+      </div>
+      
+      <!-- Service Card 5 -->
+      <div class="shadow-xl rounded-lg p-6 flex flex-col gap-3 hover:shadow-2xl transition-shadow">
+        <img class="w-10" [src]="'assets/images/icon.png'" alt="Service icon" loading="lazy">
+        <h4 class="font-medium text-lg dark:text-white">Database Design</h4>
+        <p class="text-gray-400">I create efficient database structures that optimize performance and scalability.</p>
+        <a class="text-indigo-600 font-semibold text-sm mt-auto" href="#">Read More</a>
+      </div>
+      
+      <!-- Service Card 6 -->
+      <div class="shadow-xl rounded-lg p-6 flex flex-col gap-3 hover:shadow-2xl transition-shadow">
+        <img class="w-10" [src]="'assets/images/icon.png'" alt="Service icon" loading="lazy">
+        <h4 class="font-medium text-lg dark:text-white">SEO Optimization</h4>
+        <p class="text-gray-400">I optimize websites to improve search engine rankings and increase visibility.</p>
+        <a class="text-indigo-600 font-semibold text-sm mt-auto" href="#">Read More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Portfolio Section -->
+<section class="py-20 dark:bg-slate-900" id="portfolio">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="flex flex-col gap-3 items-center mb-16">
+      <h2 class="text-indigo-600 font-bold">PORTFOLIO</h2>
+      <h3 class="text-3xl dark:text-white">Works & Projects</h3>
+      <p class="w-full md:w-2/3 lg:w-1/2 text-center text-gray-400">
+        My approach to website design is to create a website that strengthens
+        your company's brand and online presence.
+      </p>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <!-- Project items using modern CSS Grid instead of flex-wrap -->
+      @for (i of [1, 2, 3, 4, 5, 6, 7, 8]; track i) {
+        <div class="shadow-xl rounded-lg overflow-hidden hover:shadow-2xl transition-shadow">
+          <img [src]="'assets/images/item.png'" alt="Project thumbnail" loading="lazy" class="w-full h-auto">
+        </div>
+      }
+    </div>
+  </div>
+</section>
+<!-- Contact Section -->
+<section class="py-20 dark:bg-slate-900" id="contact">
+  <div class="container mx-auto px-4">
+    <!-- Section Header -->
+    <div class="flex flex-col gap-3 items-center mb-16">
+      <h2 class="text-indigo-600 font-bold">CONTACT ME</h2>
+      <h3 class="text-3xl dark:text-white">Have A Question?</h3>
+      <p class="w-full md:w-2/3 lg:w-1/2 text-center text-gray-400">
+        Do you have an idea? Let's discuss it and see what we can do
+        together.
+      </p>
+    </div>
+    
+    <!-- Contact Form -->
+    <form class="max-w-2xl mx-auto p-6 bg-white dark:bg-slate-800 rounded-lg shadow-lg">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your Name</label>
+          <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white">
+        </div>
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your Email</label>
+          <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white">
+        </div>
+      </div>
+      
+      <div class="mb-6">
+        <label for="subject" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Subject</label>
+        <input type="text" id="subject" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white">
+      </div>
+      
+      <div class="mb-6">
+        <label for="message" class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Your Message</label>
+        <textarea id="message" rows="5" class="w-full px-4 py-2 border border-gray-300 dark:border-gray-600 rounded-md focus:ring-indigo-500 focus:border-indigo-500 dark:bg-slate-700 dark:text-white"></textarea>
+      </div>
+      
+      <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-4 rounded-md transition-colors">
+        Send Message
+      </button>
+    </form>
+  </div>
+</section>
+<!-- Footer Section -->
+<footer class="bg-gray-800 dark:bg-slate-900">
+  <div class="container mx-auto py-5 flex items-center justify-between px-4">
+    <div class="flex items-center gap-2">
+      <img [src]="'assets/images/images.png'" alt="Logo" class="w-8">
+      <span class="text-2xl font-bold text-white">ALI.</span>
+    </div>
+    <span class="hidden md:block font-medium text-white">© 2025 Ali. Design with passion by Ali Dev.</span>
+
+    <div class="flex gap-4">
+      <a href="#" class="text-gray-300 hover:text-white transition-colors">
+        <img class="w-5 h-5 cursor-pointer" [src]="'assets/images/facebook.png'" alt="Facebook">
+      </a>
+      <a href="#" class="text-gray-300 hover:text-white transition-colors">
+        <img class="w-5 h-5 cursor-pointer" [src]="'assets/images/instagram.png'" alt="Instagram">
+      </a>
+      <a href="#" class="text-gray-300 hover:text-white transition-colors">
+        <img class="w-5 h-5 cursor-pointer" [src]="'assets/images/linkedin.png'" alt="LinkedIn">
+      </a>
+      <a href="#" class="text-gray-300 hover:text-white transition-colors">
+        <img class="w-5 h-5 cursor-pointer" [src]="'assets/images/twitter.png'" alt="Twitter">
+      </a>
+    </div>
+  </div>
+</footer>
+<router-outlet></router-outlet>
+<!-- <app-service></app-service> --> 
+ <!-- about -->
+
+  <!-- <div class="flex items-center justify-center gap-2 pt-30">
+    <div class="bg-white p-4 rounded-lg shadow-2xl sm:flex sm:gap-16 sm:p-3">
+      <div class="flex items-center gap-2">
+        <img [src]="'assets/images/images.png'"
+          class="w-8 h-8 object-cover rounded-full sm:h-full sm:w-36 sm:rounded-none" alt="">
+        <span>Ali Omer</span>
+      </div>
+      <div class="mt-2">
+        <p class="italic font-thin">"I'm Ali web developer developerd
+          eveloperdeveloperdevelop I'm Ali web developer developerd
+          eveloperdeveloperdevelop I'm Ali web developer developerd
+          eveloperdeveloperdevelop"</p>
+        <span class="text-sm text-gray-500">Co-founder of lama Dev</span>
+      </div>
+    </div>
+  </div> --><!-- 
+<div class="flex flex-col gap-2 p-8 sm:flex-row sm:items-center sm:gap-6 sm:py-4  shadow">
+  <img [src]="'assets/images/images.png'" class="mx-auto block h-24 rounded-full sm:mx-0 sm:shrink-0" alt=" Ali">
+  <div>
+    <div class="space-y-0.5">
+      <p class="text-lg font-semibold text-black">Ali Omer</p>
+      <p class="font-medium text-gray-500">Software Developer</p>
+    </div>
+    <button
+      class="bg-sky-500 hover:bg-sky-700 rounded-full p-2  border-purple-500 text-purple-600 hover:border-transparent hover:text-white active:bg-purple-700">
+      Contact me
+    </button>
+  </div>
+</div>
+<div class="blur-sm grayscale">
+  <p>Hello how are you</p>
+</div>
+<div>
+  <div class="flex items-center space-x-2 text-base">
+    <h4 class="font-semibold text-slate-900">Contributors</h4>
+    <span class="bg-slate-100 px-2 py-1 text-xs font-semibold text-slate-700 ...">204</span>
+  </div>
+  <div class="mt-3 flex -space-x-2 overflow-hidden">
+    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" [src]="'assets/images/images.png'" alt="" />
+    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" [src]="'assets/images/images.png'" alt="" />
+    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" [src]="'assets/images/images.png'" alt="" />
+    <img class="inline-block h-12 w-12 rounded-full ring-2 ring-white" [src]="'assets/images/images.png'" alt="" />
+  </div>
+  <div class="mt-3 text-sm font-medium">
+    <a href="#" class="text-blue-500">+ 198 others</a>
+  </div>
+</div>
+<table class="w-full" id="info">
+  <thead class="bg-gray-50 border-b-2 border-gray-200">
+    <tr>
+      <th class="p-3 text-sm font-semibold tracking-wide text-left">name</th>
+      <th class="p-3 text-sm font-semibold tracking-wide text-left">job</th>
+      <th class="p-3 text-sm font-semibold tracking-wide text-left">city</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="bg-white">
+      <td class="p-3 text-sm  text-gray-700">ali</td>
+      <td class="p-3 text-sm text-gray-700">
+        <div class="nth-last-5:underline">softwar devloper</div>
+      </td>
+      <td class="p-3 text-sm text-gray-700">alryidh</td>
+    </tr>
+    <tr class="bg-gray-50">
+      <td class="p-3 text-sm text-gray-700">omer</td>
+      <td class="p-3 text-sm text-gray-700">UI UX</td>
+      <td class="p-3 text-sm text-gray-700">JEEDAH</td>
+    </tr>
+  </tbody>
+</table>
+<input type="text" placeholder="Write here"
+  class="rounded-lg bg-sky-500 p-3 invalid:text-pink-600 focus:border-sky-500 focus:outline focus:outline-sky-500 focus:invalid:border-pink-500 focus:invalid:outline-pink-500 disabled:border-gray-200 disabled:bg-gray-50 disabled:text-gray-500 disabled:shadow-none dark:disabled:border-gray-700 dark:disabled:bg-gray-800/20 ..." />
+<div class="m-2 flex justify-between">
+  <button class="bg-blue-500 rounded-lg p-1">Button A</button>
+  <button class="bg-cyan-500 rounded-lg p-1">Button B</button>
+  <button class="bg-pink-500 rounded-lg p-1">Button C</button>
+</div> -->
