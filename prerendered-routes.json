@@ -1,9 +1,0 @@
-{
-  "routes": {
-    "/portfolio-deploy": {},
-    "/portfolio-deploy/aboutme": {},
-    "/portfolio-deploy/contact": {},
-    "/portfolio-deploy/projects": {},
-    "/portfolio-deploy/service": {}
-  }
-}
